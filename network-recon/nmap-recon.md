@@ -1,32 +1,34 @@
-# 🛡️ Enterprise Network Recon Lab
+# Reconhecimento
 
-## 🎯 Overview
+## 🎯 Objetivo
+Identificar hosts ativos e serviços expostos na rede interna.
 
-Este projeto simula um cenário real de reconhecimento e enumeração dentro de uma rede corporativa interna. O objetivo é demonstrar, de forma prática, como um possível atacante interno pode identificar ativos, serviços expostos e aplicações vulneráveis.
+## 🔧 Ferramenta
+Nmap
 
----
+## 🔍 Execução
 
-## 🧠 Scenario
+```bash
+sudo nmap -sn 192.168.56.0/24
 
-O ambiente representa uma rede interna (ex: faculdade ou empresa), contendo:
+📊 Resultado
 
-- 🖥️ Servidor Linux (Ubuntu)
-- 💻 Máquina de usuário (Windows)
-- 🐉 Máquina atacante (Kali Linux)
+Hosts identificados:
 
-Todas as máquinas estão conectadas na mesma rede interna, simulando um ambiente corporativo real.
+192.168.56.50 (Ubuntu Server)
 
----
+192.168.56.20 (Windows)
+```
+## 🔎 Scan detalhado
 
-## ⚙️ Technologies Used
+```
+sudo nmap -sS -sV 192.168.56.50
 
-- VirtualBox / VMware
-- Ubuntu Server
-- Kali Linux
-- Windows
-- Nmap
-- DVWA (Damn Vulnerable Web Application)
+📊 Portas encontradas
 
----
+22/tcp → SSH
 
-## 🏗️ Network Architecture
+80/tcp → HTTP
+
+8080/tcp → Aplicação Web (DVWA)
+```
