@@ -1,37 +1,32 @@
-🎯 Project Overview
+# 🛡️ Enterprise Network Recon Lab
 
-Simulação de reconhecimento e enumeração em uma rede interna corporativa, com identificação de serviços expostos e análise de superfície de ataque.
+## 🎯 Overview
 
-<hr>
+Este projeto simula um cenário real de reconhecimento e enumeração dentro de uma rede corporativa interna. O objetivo é demonstrar, de forma prática, como um possível atacante interno pode identificar ativos, serviços expostos e aplicações vulneráveis.
 
-🧠 Scenario
+---
 
-Ambiente simula uma rede interna (ex: faculdade ou empresa), contendo:
+## 🧠 Scenario
 
-<ul>
-  <li>máquina de usuário (Windows)</li>
-  <li>servidor interno (Ubuntu)</li>
-  <li>atacante interno (Kali Linux)</li>
-</ul>
+O ambiente representa uma rede interna (ex: faculdade ou empresa), contendo:
 
-<hr>
+- 🖥️ Servidor Linux (Ubuntu)
+- 💻 Máquina de usuário (Windows)
+- 🐉 Máquina atacante (Kali Linux)
 
-⚙️ Technologies Used
+Todas as máquinas estão conectadas na mesma rede interna, simulando um ambiente corporativo real.
 
-<ul>
-  <li>VirtualBox</li>
-  <li>Linux</li>
-  <li>Windows</li>
-  <li>DVWA</li>
-</ul>
+---
 
-<hr>
+## ⚙️ Technologies Used
 
-🔍 Key Activities
+- VirtualBox / VMware
+- Ubuntu Server
+- Kali Linux
+- Windows
+- Nmap
+- DVWA (Damn Vulnerable Web Application)
 
-<ul>
-  <li>Descoberta de hosts na rede</li>
-  <li>Identificação de serviços ativos</li>
-  <li>Enumeração de aplicação web</li>
-  <li>Acesso a sistema vulnerável (DVWA)</li>
-</ul>
+---
+
+## 🏗️ Network Architecture
