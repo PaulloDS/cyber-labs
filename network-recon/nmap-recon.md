@@ -17,7 +17,7 @@ Hosts identificados:
 
 192.168.56.50 (Ubuntu Server)
 
-192.168.56.20 (Windows)
+192.168.56.30 (Windows)
 ```
 ## 🔎 Scan detalhado
 
