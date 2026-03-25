@@ -43,7 +43,7 @@ Obter acesso ao servidor através de exploração de vulnerabilidade web e reali
 
 ## 🧱 Arquitetura
 -- Kali Linux (Attacker) → 192.168.56.20
--- Ubuntu Server (Target) → 192.168.56.10
+-- Ubuntu Server (Target) → 192.168.56.50
 -- Windows Client → 192.168.56.30
 
 ---
