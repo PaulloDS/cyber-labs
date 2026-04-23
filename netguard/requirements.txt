@@ -1,0 +1,9 @@
+# NetGuard — Dependências
+# Todas as dependências são da biblioteca padrão do Python 3.9+
+# Nenhuma instalação adicional necessária!
+
+# Para recursos opcionais (futuras versões):
+# scapy>=2.5.0        # ARP scan mais robusto
+# python-nmap>=0.7.1  # Integração com nmap
+# rich>=13.0.0        # Output colorido aprimorado
+# jinja2>=3.1.0       # Templates HTML mais flexíveis
