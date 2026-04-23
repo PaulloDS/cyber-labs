@@ -1,0 +1,31 @@
+Apr  1 02:14:01 server sshd[1234]: Failed password for root from 203.0.113.42 port 52412 ssh2
+Apr  1 02:14:03 server sshd[1234]: Failed password for root from 203.0.113.42 port 52413 ssh2
+Apr  1 02:14:05 server sshd[1234]: Failed password for root from 203.0.113.42 port 52414 ssh2
+Apr  1 02:14:07 server sshd[1234]: Failed password for root from 203.0.113.42 port 52415 ssh2
+Apr  1 02:14:09 server sshd[1234]: Failed password for root from 203.0.113.42 port 52416 ssh2
+Apr  1 02:14:11 server sshd[1234]: Failed password for root from 203.0.113.42 port 52417 ssh2
+Apr  1 02:14:13 server sshd[1234]: Failed password for root from 203.0.113.42 port 52418 ssh2
+Apr  1 02:14:15 server sshd[1234]: Failed password for root from 203.0.113.42 port 52419 ssh2
+Apr  1 02:14:17 server sshd[1234]: Failed password for root from 203.0.113.42 port 52420 ssh2
+Apr  1 02:14:19 server sshd[1234]: Failed password for root from 203.0.113.42 port 52421 ssh2
+Apr  1 02:15:00 server sshd[1235]: Failed password for invalid user admin from 198.51.100.7 port 33901 ssh2
+Apr  1 02:15:02 server sshd[1235]: Failed password for invalid user admin from 198.51.100.7 port 33902 ssh2
+Apr  1 02:15:04 server sshd[1235]: Failed password for invalid user admin from 198.51.100.7 port 33903 ssh2
+Apr  1 02:15:06 server sshd[1235]: Invalid user testuser from 198.51.100.7
+Apr  1 02:15:08 server sshd[1235]: Invalid user oracle from 198.51.100.7
+Apr  1 02:16:00 server sshd[1236]: Accepted password for deploy from 10.0.0.5 port 61234 ssh2
+Apr  1 02:20:00 server sudo:   deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/usr/bin/systemctl restart nginx
+Apr  1 03:00:01 server sshd[1237]: Failed password for root from 185.220.101.55 port 44100 ssh2
+Apr  1 03:00:03 server sshd[1237]: Failed password for root from 185.220.101.55 port 44101 ssh2
+Apr  1 03:00:05 server sshd[1237]: Failed password for root from 185.220.101.55 port 44102 ssh2
+Apr  1 03:00:07 server sshd[1237]: Failed password for root from 185.220.101.55 port 44103 ssh2
+Apr  1 03:00:09 server sshd[1237]: Failed password for root from 185.220.101.55 port 44104 ssh2
+Apr  1 03:00:11 server sshd[1237]: Failed password for root from 185.220.101.55 port 44105 ssh2
+Apr  1 03:00:13 server sshd[1237]: Failed password for root from 185.220.101.55 port 44106 ssh2
+Apr  1 03:00:15 server sshd[1237]: Failed password for root from 185.220.101.55 port 44107 ssh2
+Apr  1 03:00:17 server sshd[1237]: Failed password for root from 185.220.101.55 port 44108 ssh2
+Apr  1 03:00:19 server sshd[1237]: Failed password for root from 185.220.101.55 port 44109 ssh2
+Apr  1 03:00:21 server sshd[1237]: Failed password for root from 185.220.101.55 port 44110 ssh2
+Apr  1 03:00:23 server sshd[1237]: Failed password for root from 185.220.101.55 port 44111 ssh2
+Apr  1 08:30:00 server sshd[1238]: Accepted publickey for ubuntu from 192.168.1.10 port 54321 ssh2
+Apr  1 09:00:00 server sudo:   ubuntu : TTY=pts/1 ; PWD=/home/ubuntu ; USER=root ; COMMAND=/usr/bin/apt update
