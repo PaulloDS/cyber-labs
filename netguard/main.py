@@ -133,30 +133,46 @@ def main():
         all_results = {}
 
         # Port Scan
+        import urllib.parse
+        parsed = urllib.parse.urlparse(args.target)
+        scan_host = parsed.hostname if parsed.hostname else args.target
+
         class PsArgs:
-            target = args.target
+            target = scan_host
             ports = "1-1024"
             timeout = 0.5
-        all_results["port_scan"] = run_port_scan(PsArgs())
+        try:
+            all_results["port_scan"] = run_port_scan(PsArgs())
+        except Exception as e:
+            print(f"  [!] Port scan ignorado: {e}\n")
 
         # Header Check
         url = args.target if args.target.startswith("http") else f"http://{args.target}"
         class HcArgs:
             target = url
-        all_results["header_check"] = run_header_check(HcArgs())
+        try:
+            all_results["header_check"] = run_header_check(HcArgs())
+        except Exception as e:
+            print(f"  [!] Header check ignorado: host não tem servidor web acessível.\n")
 
         # Inventory
         if args.network:
             class InvArgs:
                 network = args.network
-            all_results["inventory"] = run_inventory(InvArgs())
+            try:
+                all_results["inventory"] = run_inventory(InvArgs())
+            except Exception as e:
+                print(f"  [!] Inventory ignorado: {e}\n")
 
         # Log Analysis
         if args.logfile:
             class LaArgs:
                 logfile = args.logfile
                 type = "auth"
-            all_results["log_analysis"] = run_log_analyze(LaArgs())
+            try:
+                all_results["log_analysis"] = run_log_analyze(LaArgs())
+            except Exception as e:
+                print(f"  [!] Log analysis ignorado: {e}\n")
 
         # Report
         print(f"\n[*] Gerando relatório HTML em: {args.output}")
