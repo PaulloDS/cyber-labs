@@ -1,5 +1,7 @@
 # HTB Academy - Cross-Site Scripting (XSS) Skills Assessment
 
+<img src="https://i.imgur.com/58ZFRDF.png"/>
+
 ## Resumo
 
 Durante um teste de segurança em uma aplicação web de blog, foi identificada uma vulnerabilidade de **Blind Stored Cross-Site Scripting (XSS)** que permitiu a execução de código JavaScript no navegador do administrador da aplicação.
